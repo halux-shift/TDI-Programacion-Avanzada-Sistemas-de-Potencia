@@ -35,9 +35,14 @@ class Generador(ElementoRed):
 
 #Clase hija Carga que hereda ElementoRed
 class Carga(ElementoRed):
+<<<<<<< HEAD
     def __init__(self, id:str, nombre:str, tipo_carga: str, demanda:int):
         super().__init__(id, nombre)
         self.tipo_carga = tipo_carga
+=======
+    def __init__(self, id:str, nombre:str, demanda:int):
+        super().__init__(id, nombre)
+>>>>>>> ea52876d2174700e16111e4b1c0c529ff4bb4cdd
         self.__demanda = demanda                  #Atributo privado
 
     #Método getter para acceder al atributo privado demanda
@@ -48,7 +53,11 @@ class Carga(ElementoRed):
 
 #Clase hija LineaTransmision que hereda ElementoRed
 class LineaTransmision(ElementoRed):
+<<<<<<< HEAD
     def __init__(self, id:str, nombre:str, capacidad_linea:float, nodo_origen:int, nodo_destino:int, 
+=======
+    def __init__(self, id:str, nombre:str, capacidad_linea:float, nodo_origen, nodo_destino, 
+>>>>>>> ea52876d2174700e16111e4b1c0c529ff4bb4cdd
     reactancia:float):
         super().__init__(id, nombre)
         self.__capacidad_linea = capacidad_linea   #Atributo privado
