@@ -6,8 +6,6 @@ class ElementoRed:
         self.id = id
         self.nombre = nombre
 
-
-
 #Clase hija Generador que hereda ElementoRed
 class Generador(ElementoRed):
     #Se decidió añadir el atributo de potencia mínima para mejorar la definición
@@ -31,8 +29,6 @@ class Generador(ElementoRed):
         return self.__costo_operativo
     #########
 
-
-
 #Clase hija Carga que hereda ElementoRed
 class Carga(ElementoRed):
     def __init__(self, id:str, nombre:str, demanda:int):
@@ -43,7 +39,6 @@ class Carga(ElementoRed):
     def get_demanda(self) -> int:
         return self.__demanda
         
-
 
 #Clase hija LineaTransmision que hereda ElementoRed
 class LineaTransmision(ElementoRed):
